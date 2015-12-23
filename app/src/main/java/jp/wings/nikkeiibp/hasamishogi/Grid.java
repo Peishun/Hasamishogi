@@ -20,7 +20,10 @@ public class Grid {
 	/** 後手の駒が置いてあることを表す定数 **/
 	public static final int SECOND = 3;
 
-	/** 前回移動した駒が置いてあること表す定数**/
+	/** 選択された駒であることを表す **/
+	private boolean selected;
+
+	/** 前回移動した駒が置いてあること表す**/
 	private boolean lastmove;
 
 	/** マスの状態 **/
@@ -32,6 +35,7 @@ public class Grid {
 	public Grid(){
 
 		state = EMPTY;
+		selected = false;
 		lastmove = false;
 	}
 	
@@ -76,5 +80,13 @@ public class Grid {
 
 	public void setLastmove(boolean lastmove) {
 		this.lastmove = lastmove;
+	}
+
+	public boolean isSelected() {
+		return selected;
+	}
+
+	public void setSelected(boolean selected) {
+		this.selected = selected;
 	}
 }

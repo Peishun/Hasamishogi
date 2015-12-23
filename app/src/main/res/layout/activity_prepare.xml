@@ -45,22 +45,23 @@
         </LinearLayout>
     </LinearLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center"
         android:padding="10dp"
         android:layout_margin="10dp"
         android:background="@drawable/tree">
         <GridLayout
             android:id="@+id/prapare_gridlayout"
-            android:background="@color/black"
             android:padding="1dp"
+            android:background="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:columnCount="9"
-            android:rowCount="9">
+            android:rowCount="1">
         </GridLayout>
-    </FrameLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,27 +79,30 @@
                 android:id="@+id/introducepiece"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:background="@color/palette_green_10"
-                android:src="@drawable/gold"/>
+                android:background="@color/palette_green_10"/>
             <TextView
                 android:id="@+id/piececost"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="cost=1"/>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/sample_linnner_layout"
             android:background="@color/black"
-            android:gravity="right"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
+            android:layout_marginLeft="16dp"
             android:orientation="horizontal">
         </LinearLayout>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/piecesummary"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_width="match_parent"

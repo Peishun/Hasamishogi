@@ -60,7 +60,6 @@ public class Preparefield extends Field{
 
 				grids[i][j].setState(Grid.EMPTY);
 				grids[i][j].setPiece(null);
-
 			}
 		}
 

@@ -234,23 +234,23 @@ public class Battlefield extends Field {
 		return false;
 	}
 
-	public void reverse(){
-		for(int  i = 0 ; i < ( nYgrid / 2 + 1 ) ; i++ ) {
-			for (int j = 0; j < nXgrid ; j++) {
-
-				Grid tmpgrid;
-
-				tmpgrid = grids[i][j];
-				grids[i][j] = grids[nYgrid - i - 1][nXgrid - j - 1];
-				grids[nYgrid - i - 1][nXgrid - j - 1] = tmpgrid;
-
-				if( ( i ==  (nYgrid / 2) )  && ( j ==  (nXgrid /2) ) ){
-					break;
-				}
-
-			}
-		}
-	}
+//	public void reverse(){
+//		for(int  i = 0 ; i < ( nYgrid / 2 + 1 ) ; i++ ) {
+//			for (int j = 0; j < nXgrid ; j++) {
+//
+//				Grid tmpgrid;
+//
+//				tmpgrid = grids[i][j];
+//				grids[i][j] = grids[nYgrid - i - 1][nXgrid - j - 1];
+//				grids[nYgrid - i - 1][nXgrid - j - 1] = tmpgrid;
+//
+//				if( ( i ==  (nYgrid / 2) )  && ( j ==  (nXgrid /2) ) ){
+//					break;
+//				}
+//
+//			}
+//		}
+//	}
 
 
 

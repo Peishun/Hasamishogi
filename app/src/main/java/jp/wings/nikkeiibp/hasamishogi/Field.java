@@ -40,5 +40,28 @@ public class Field {
 	public Piece getOnpiece(int y,int x){
 		return grids[y][x].getPiece();
 	}
-	
+
+	public boolean getisgridsselected(int y,int x){
+		return grids[y][x].isSelected();
+	}
+
+	/**
+	 * 前回移動した駒の状態をリセットするメソッド
+	 */
+	public void selectedInit(){
+
+		for(int i = 0; i < nYgrid; i++ ){
+
+			for(int j = 0; j < nXgrid; j++ ){
+				if( grids[i][j].isSelected() ){
+					grids[i][j].setSelected(false);
+				}
+			}
+		}
+	}
+
+	public void gridsselected(int y,int x){
+		grids[y][x].setSelected(true);
+	}
+
 }
