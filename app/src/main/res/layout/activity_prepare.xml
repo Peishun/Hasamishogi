@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jp.wings.nikkeiibp.hasamishogi.PrepareAvtivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用コスト"/>
+            <TextView
+                android:id="@+id/usecost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/30"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/tree">
+        <GridLayout
+            android:id="@+id/prapare_gridlayout"
+            android:background="@color/black"
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="9"
+            android:rowCount="9">
+        </GridLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/introducepiece"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@color/palette_green_10"
+                android:src="@drawable/gold"/>
+            <TextView
+                android:id="@+id/piececost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cost=1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sample_linnner_layout"
+            android:background="@color/black"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_marginRight="16dp"/>
+        <Button
+            android:id="@+id/decisionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decision"/>
+    </LinearLayout>
+
+</LinearLayout>

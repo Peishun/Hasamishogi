@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HasamiShogi</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_playing">PlayingActivity</string>
+    <string name="title_activity_prepare_avtivity">PrepareAvtivity</string>
+    <string name="decision">確定</string>
+    <string name="reset">リセット</string>
+</resources>
